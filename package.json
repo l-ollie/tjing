@@ -1,0 +1,17 @@
+{
+  "name": "tjing",
+  "version": "1.0.0",
+  "main": "index.html",
+  "dependencies": {
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0"
+  },
+  "scripts": {},
+  "author": "Ollie Weijermars",
+  "license": "ISC",
+  "description": "tjing website for andre weijermars"
+}
