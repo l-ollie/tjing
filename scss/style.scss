@@ -57,18 +57,6 @@ table {
 
 /*=======*/
 
-//$font-stack: balalala, sans-serif;
-//$primary-color: #fff;
-//
-//body {
-//  display: none;
-//
-//  font: 100% $font-stack;
-//  background-color: $primary-color !important;
-//}
-
-/*=======*/
-
 .circle-exposion-container {
   width: 0vw;
 }
@@ -95,8 +83,8 @@ table {
   max-width: 100%;
   z-index: 30;
   mask: url(../assets/Tjing.svg) no-repeat center;
-  //-webkit-mask: url(assets/Tjing.svg) no-repeat center;
-  -webkit-mask-size: 2500%;
+  mask-size: 2500%;
+
 }
 
 .ledstrip-container {
