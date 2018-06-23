@@ -22,6 +22,7 @@ gulp.task('sync', function () {
     gulp.watch(['./js/*.js'], ['uglifyjs']);
     gulp.watch(['./prefix/*.css'], ['uglifycss']);
     gulp.watch(['./*.html']).on('change', browserSync.reload);
+    gulp.watch(['./dist/*.css']).on('change', browserSync.reload);
     gulp.watch('./js/*.js').on('change', browserSync.reload);
     // proxy: "tjing.dev",'
     // files: "*.css,*.html,css/*css"
