@@ -6,7 +6,7 @@ $(window).on('load', function () {
 
         var screenHeight = window.innerHeight;
         var screenWidth = window.innerWidth;
-        var circleExplosionAmount = 50;
+        var circleExplosionAmount = 30;
 
         /*
         GSAP JS Demo
@@ -28,7 +28,7 @@ $(window).on('load', function () {
             var q = 20 / circleExplosionAmount;
             for (c = 0; c < circleExplosionAmount; c++) {
                 var temp = (c * q) + (Math.random() * 4) + -10;
-                console.log(temp)
+                // console.log(temp)
                 SaturationItemList[c] = "hsl(+=0, -=0%, +=" + temp + "%)";
             }
         };
@@ -42,7 +42,7 @@ $(window).on('load', function () {
         }
 
         function makeRandomScale(i) {
-            return ((Math.random() * 10) / circleExplosionAmount) * (circleExplosionAmount - i + 20) + 1.5;
+            return ((Math.random() * 10) / circleExplosionAmount) * (circleExplosionAmount - i + 20) + 1.9;
         };
 
         var RandomScaleList = [];

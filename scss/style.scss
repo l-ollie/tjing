@@ -166,10 +166,61 @@ table {
   box-sizing: border-box;
 }
 
+
+// ======================================================
+// ====================================================== FONTS
+// ======================================================
+
+p{
+  line-height: 1.4;
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 100px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 90px ;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+
+
+
+// ======================================================
+// ====================================================== RESPONSIVE
+// ======================================================
+
+
 /* Small devices (tablets, 768px and up) */
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 991px)  {
   .text-column2-sm {
-    column-count: 2;
+    column-count: 1;
+  }
+
+  p{
+    font-size: 37px;
+    margin-bottom: 60px;
+  }
+
+
+  h3{
+    font-size: 55px;
+    margin-top: 60px;
+  }
+
+  .vertical-margin {
+      margin-bottom: 0vh!important;
+  }
+
+  .text-right{
+    text-align: left!important;
   }
 
 }
@@ -177,6 +228,11 @@ table {
 /* Medium devices (desktops, 992px and up) */
 
 @media screen and(min-width: 992px) {
+
+  .text-column2-sm {
+    column-count: 2;
+  }
+
   .row-content {
     padding: 0px 5vw !important;
     min-width: 100%;
@@ -215,10 +271,6 @@ table {
   justify-content: center;
 }
 
-h3 {
-  margin: .5rem 0 !important;
-}
-
 .container-fluid {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -253,6 +305,10 @@ h3 {
 
 .vertical-center-2 {
   align-self: center;
+}
+
+.z-index4{
+  z-index: 4
 }
 
 /*@media screen*/
@@ -420,18 +476,6 @@ h3 {
   align-self: flex-end;
 }
 
-h1 {
-  font-size: 7em !important;
-  width: 100%;
-}
-
-h2 {
-  font-size: 5em !important;
-}
-
-h2 {
-  font-size: 3em !important;
-}
 
 .text-right {
   text-align: right;
