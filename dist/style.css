@@ -36,6 +36,9 @@ body {
   justify-content: center;
   overflow-x: hidden; }
 
+i {
+  font-style: italic; }
+
 ol, ul {
   list-style: none; }
 
@@ -170,14 +173,16 @@ p {
 
 h1 {
   font-size: 100px;
-  width: 100%; }
+  width: 100%;
+  font-weight: 100; }
 
 h2 {
   font-size: 90px; }
 
 h3 {
   font-size: 40px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-weight: 100; }
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (max-width: 991px) {
@@ -188,12 +193,14 @@ h3 {
     font-size: 37px;
     margin-bottom: 60px; }
   h3 {
-    font-size: 55px;
+    font-size: 65px;
     margin-top: 60px; }
   .vertical-margin {
     margin-bottom: 0vh !important; }
   .text-right {
-    text-align: left !important; } }
+    text-align: left !important; }
+  .vertical-padding {
+    padding-bottom: 3vh; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {

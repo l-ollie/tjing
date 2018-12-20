@@ -35,6 +35,9 @@ body {
   overflow-x: hidden;
 
 }
+i{
+font-style: italic;
+}
 
 ol, ul {
   list-style: none;
@@ -179,6 +182,8 @@ p{
 h1 {
   font-size: 100px;
   width: 100%;
+  font-weight: 100;
+
 }
 
 h2 {
@@ -188,6 +193,8 @@ h2 {
 h3 {
   font-size: 40px;
   line-height: 1.5;
+  font-weight: 100;
+
 }
 
 
@@ -211,7 +218,7 @@ h3 {
 
 
   h3{
-    font-size: 55px;
+    font-size: 65px;
     margin-top: 60px;
   }
 
@@ -221,6 +228,10 @@ h3 {
 
   .text-right{
     text-align: left!important;
+  }
+
+  .vertical-padding {
+    padding-bottom: 3vh;
   }
 
 }
