@@ -204,7 +204,7 @@ $(window).on('load', function () {
         var scene = new ScrollMagic.Scene({
             // triggerElement: this,
             // offset: 50,
-            duration: "200%",
+            duration: "700%",
 
         })
             .setTween(intro) // trigger a TweenMax.to intro
