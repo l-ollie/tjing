@@ -202,7 +202,14 @@ h3 {
   .text-right {
     text-align: left !important; }
   .vertical-padding {
-    padding-bottom: 3vh; } }
+    padding-bottom: 3vh; }
+  .form-control {
+    padding: 1.375rem 1.75rem;
+    font-size: 2rem !important; }
+  .btn-group-lg > .btn, .btn-lg {
+    padding: 1.5rem 2rem;
+    font-size: 2.25rem;
+    width: 100%; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -298,10 +305,10 @@ h3 {
 /*}*/
 /*}*/
 /*
-==================
-================== scroll indicator
-==================
-*/
+  ==================
+  ================== scroll indicator
+  ==================
+  */
 .scroll-indicator {
   /*position: absolute;*/
   /*top: 32vw;*/
@@ -363,10 +370,10 @@ h3 {
     transform: translateY(46px); } }
 
 /*
-==================
-================== content styling
-==================
-*/
+  ==================
+  ================== content styling
+  ==================
+  */
 .height-100vh {
   min-height: 100vh; }
 
@@ -403,10 +410,10 @@ h3 {
   color: white; }
 
 /*
-==================
-================== content styling
-==================
-*/
+  ==================
+  ================== content styling
+  ==================
+  */
 .container-title {
   /*min-height: 20vh;*/
   /*padding: 10vh 0;*/
