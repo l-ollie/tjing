@@ -161,49 +161,6 @@ h3 {
   line-height: 1.5;
   font-weight: 100; }
 
-/* Small devices (tablets, 768px and up) */
-@media screen and (max-width: 991px) {
-  .text-column2-sm {
-    column-count: 1; }
-  p {
-    font-size: 37px;
-    margin-bottom: 60px;
-    line-height: 1.6; }
-  h3 {
-    font-size: 65px;
-    margin-top: 60px; }
-  .vertical-margin {
-    margin-bottom: 0vh !important; }
-  .text-right {
-    text-align: left !important; }
-  .vertical-padding {
-    padding-bottom: 3vh; }
-  .form-control {
-    padding: 1.375rem 1.75rem;
-    font-size: 2rem !important; }
-  .btn-group-lg > .btn, .btn-lg {
-    padding: 1.5rem 2rem;
-    font-size: 2.25rem;
-    width: 100%; } }
-
-/* Medium devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-  .text-column2-sm {
-    column-count: 2; }
-  .row-content {
-    padding: 0px 5vw !important;
-    min-width: 100%;
-    margin-top: -8px;
-    box-sizing: border-box; }
-  .img-fluid-center {
-    max-width: 50vw !important;
-    transform: translate(-25%, 0%) !important;
-    position: absolute; }
-  .align-bottom {
-    text-align: right;
-    padding-bottom: 50px; } }
-
-/* Large devices (large desktops, 1200px and up) */
 .vertical-margin {
   margin-bottom: 10vh; }
 
@@ -226,7 +183,7 @@ h3 {
   min-height: 80vh; }
 
 .height-70vh {
-  min-height: 70vh !important; }
+  min-height: 70vh; }
 
 .side-img {
   min-width: 100vw;
@@ -245,6 +202,9 @@ h3 {
 
 .z-index4 {
   z-index: 4; }
+
+.flex-display {
+  display: flex; }
 
 /*@media screen*/
 /*and (min-device-width: 768px)*/
@@ -265,10 +225,10 @@ h3 {
 /*}*/
 /*}*/
 /*
-  ==================
-  ================== scroll indicator
-  ==================
-  */
+==================
+================== scroll indicator
+==================
+*/
 .scroll-indicator {
   /*position: absolute;*/
   /*top: 32vw;*/
@@ -328,10 +288,10 @@ h3 {
     transform: translateY(46px); } }
 
 /*
-  ==================
-  ================== content styling
-  ==================
-  */
+==================
+================== content styling
+==================
+*/
 .height-100vh {
   min-height: 100vh; }
 
@@ -367,10 +327,13 @@ h3 {
   color: white; }
 
 /*
-  ==================
-  ================== content styling
-  ==================
-  */
+==================
+================== content styling
+==================
+*/
+.align-bottom {
+  align-self: flex-end; }
+
 .container-title {
   /*min-height: 20vh;*/
   /*padding: 10vh 0;*/
@@ -382,11 +345,73 @@ h3 {
   display: flex;
   align-items: center; }
 
-.align-bottom {
-  align-self: flex-end; }
-
 .text-right {
   text-align: right; }
 
 li {
   font-weight: 500; }
+
+.btn-lg {
+  border-radius: 300px; }
+
+.btn-primary {
+  background-color: #00979d;
+  border-color: #990f30; }
+
+.btn-lg {
+  width: 100%; }
+
+.form-control {
+  border: 1px solid #fff; }
+
+.extra-bottom {
+  margin-bottom: 30px; }
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 991px) {
+  .text-column2-sm {
+    column-count: 1; }
+  .height-100vh {
+    min-height: auto; }
+  p {
+    font-size: 37px;
+    margin-bottom: 75px;
+    line-height: 1.6; }
+  .form-group {
+    margin-bottom: 2rem; }
+  h3 {
+    font-size: 65px; }
+  .vertical-margin {
+    margin-bottom: 0vh !important; }
+  .text-right {
+    text-align: left !important; }
+  .vertical-padding {
+    padding-bottom: 3vh; }
+  .form-control {
+    padding: 1.375rem 1.75rem;
+    font-size: 2rem !important; }
+  .btn-group-lg > .btn, .btn-lg {
+    padding: 1.5rem 2rem;
+    font-size: 2.25rem;
+    width: 100%; }
+  .height-70vh {
+    min-height: auto !important; } }
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .text-column2-sm {
+    column-count: 2; }
+  .row-content {
+    padding: 0px 5vw !important;
+    min-width: 100%;
+    margin-top: -8px;
+    box-sizing: border-box; }
+  .img-fluid-center {
+    max-width: 50vw !important;
+    transform: translate(-25%, 0%) !important;
+    position: absolute; }
+  .align-bottom {
+    text-align: right;
+    padding-bottom: 50px; } }
+
+/* Large devices (large desktops, 1200px and up) */
