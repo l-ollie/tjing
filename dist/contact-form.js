@@ -1,0 +1,1 @@
+$(document).ready(function(){var t=$("#form"),n=$("#submit"),a=$(".alert");t.on("submit",function(e){e.preventDefault(),$.ajax({url:"",type:"POST",dataType:"html",data:t.serialize(),beforeSend:function(){a.fadeOut(),n.html("Sending....")},success:function(e){a.html(e).fadeIn(),t.trigger("reset"),n.html("Send Email")},error:function(e){console.log(e)}})})});

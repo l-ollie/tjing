@@ -6,7 +6,7 @@
 # request sent using HTTP_X_REQUESTED_WITH
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
   if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['subject']) AND isset($_POST['message'])) {
-    $to = 'ollieweijermars@gmail.com';
+    $to = 'info@tjing.it';
 
     $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
@@ -128,6 +128,7 @@ function email($to, $from_mail, $from_name, $subject, $message)
           <h3>Pong brought to life</h3>
           <p>One of the earliest arcade video games now handcrafted, in wood.
             Take it anywhere with the handcrafted portable game console.
+            A combination of light and sound.
           </p>
         </div>
 
@@ -139,9 +140,7 @@ function email($to, $from_mail, $from_name, $subject, $message)
           <h3>The competition</h3>
           <p>Get the competition going with the Pong-like high response game.
             Beat the opponent by slamming the button first and being the best at your game. Not fast enough? Get creative and use a distraction!
-            Get the competition going in bright daylight or deep into the night with the bright full range colourful RGB LEDs.
 
-            A combination of light and sound.
           </p>
         </div>
 
@@ -164,34 +163,40 @@ function email($to, $from_mail, $from_name, $subject, $message)
 
   <div class="row row-content vertical-margin ">
     <div class="col-lg-5 offset-lg-1 col-md-12 ">
-      <img class="img-fluid" src="assets/placeholderImg.png">
+      <img class="img-fluid float-right2" src="assets/Fast.png">
     </div>
     <div class="col-lg-5 col-md-12">
       <h3>Fast and the furious</h3>
-      <p>TJING is fast. One ball, two goals - make it count!      </p>
+      <p>TJING is fast. One ball, two goals - make it count!    <br>
+        The light strand is the playing field.
+        Yellow ball shoots back and forth with sound.
+        Arcade buttons at each side of the strand.
+      </p>
     </div>
   </div>
 
   <div class="row row-content vertical-margin ">
     <div class="col-md-12 col-lg-5 col-md-push-12 order-lg-2">
-      <img class="img-fluid" src="assets/placeholderImg.png">
+      <img class="img-fluid" src="assets/Timing.png">
     </div>
 
-    <div class="col-lg-5 order-lg-1 col-md-12 text-right ">
+    <div class="col-lg-5 order-lg-1 offset-lg-1 col-md-12 text-right ">
       <h3>It's <i>all</i> about timing</h3>
-      <p>Battle against your rival by smashing the button at just the right time. Score points by being the fastest. Bounce the ball just inside the blue zone, and get an extra boost. The longer you wait, the faster it bounces. But be careful, don't let the ball slip away.
+      <p>
+        Battle against your rival by slamming the button at just the right time. Score points by being the fastest. Bounce the ball just inside the blue zone. The longer you delay, the faster the bounce. But be careful....don't let it slip away.
       </p>
     </div>
   </div>
 
   <div class="row row-content vertical-margin ">
     <div class="col-md-12  col-lg-5 offset-lg-1">
-      <img class="img-fluid" src="assets/placeholderImg.png">
+      <img class="img-fluid float-right2" src="assets/Win.png">
     </div>
 
     <div class="col-md-12 col-lg-5">
       <h3>For the win</h3>
-      <p>Beat your nemesis by being the first to score 10 points! But don't wait too long, you're not the only one who wants to win. The winner gets the victory, the loser gets nothing. The score is what counts.
+      <p>
+        Beat your nemesis. The first to ten points is the winner! But don't wait too long, you're not the only one who wants to win. Enjoy the winner’s tune. The winner gets the victory, the loser gets nothing. The score is what counts.
       </p>
     </div>
   </div>
@@ -215,9 +220,10 @@ function email($to, $from_mail, $from_name, $subject, $message)
       <div class="">
         <!-- <h3>Description title</h3> -->
         <p class="text-column2-sm">
-          TJING is a two-player portable game console made from the strongest solid beach wood. With its simple and elegant design, and hard waxed oil finish, it is handcrafted to perfection.
+
+          TJING is a two-player portable game console made from the strongest solid beechwood. With its simple and elegant design, and hard waxed oil finish, it is handcrafted to perfection.
           <br>
-          The console has a built-in rechargeable battery. Charge the battery with the power cable or USB charger, both included. You can even charge TJING with your mobile phone, with a suitable adapter. You can play TJING while it’s charging.
+          The console has a built-in rechargeable battery. Charge the battery with the power cable and USB charger, included. You can even charge TJING with your mobile phone, using a suitable adapter. You can play TJING while it’s charging.
         </p>
       </div>
     </div>
@@ -241,10 +247,19 @@ function email($to, $from_mail, $from_name, $subject, $message)
         <h3>Specs</h3>
         <!-- <p>Description about the product <br> -->
         <p>
-          Playing time:  6 hours
-          Charging time: 6 hours, you can play during charging
-          Full color RGB LEDs
+          Rectangular beam from solid European beechwood
+          Finishing of  three layers of hard-waxed oil.
+          <br><br>
+          Full color RGB ledstrip
+          <br><br>
           White LED string protected with waterproof silicone rubber sheath (IP65 protection rating)
+          <br><br>
+          Battery capacity: 2200mAh
+          Playing time:  6-7 hours approx.
+          Charging time: 5-6 hours approx. You can play during charging
+          Battery type: rechargeable Lithium ion
+          USB charger and cable provided
+
         </p>
       </div>
 
@@ -294,10 +309,12 @@ function email($to, $from_mail, $from_name, $subject, $message)
     </div>
 
     <div class="col-sm-12 order-lg-1 col-lg-6 vertical-center-5">
-      <h3> TJING it with friends
+      <h3>
+        TJING it with friends
       </h3>
       <p>
         Play with your friends.
+        <br>
         Great fun at a party.
       </p>
     </div>
@@ -313,6 +330,7 @@ function email($to, $from_mail, $from_name, $subject, $message)
       </h3>
       <p>
         Invite customers or clients to play.
+        <br>
         Laugh together, relieve tension.
       </p>
     </div>
@@ -325,6 +343,8 @@ function email($to, $from_mail, $from_name, $subject, $message)
 
     <div class="col-sm-12 order-lg-1 col-lg-6 vertical-center-5">
       <h3> TJING it wherever you want
+        <br>
+        Enjoy the winner’s tune.
       </h3>
       <p>
         Tense? Play TJING.
@@ -356,8 +376,8 @@ function email($to, $from_mail, $from_name, $subject, $message)
             <div class="col-sm-12  col-lg-6 offset-lg-3">
               <form class="form-horizontal" id="form" action="" method="post">
                 <fieldset>
-                  <p class="alert">If you have any questions, remarks or just want to get in
-                    contact, feel free to contact me!
+                  <p class="alert">
+                    For more information send an e-mail
                   </p>
 
                   <div class="form-group">
@@ -408,8 +428,19 @@ function email($to, $from_mail, $from_name, $subject, $message)
     </div>
   </div>
 
+</div>
+<div class="row">
+  <div class=" col-12" >
 
-  <script type="text/javascript" src="dist/gsAnimation.js"></script>
-  <script src="js/contact-form.js"></script>
+    <footer class="footer text-center">
+
+        © 2019 André Weijermars
+
+    </footer>
+  </div>
+</div>
+
+<script type="text/javascript" src="dist/gsAnimation.js"></script>
+<script src="dist/contact-form.js"></script>
 
 </body>

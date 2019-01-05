@@ -170,7 +170,8 @@ table {
 p {
   line-height: 1.4;
   font-size: 17px;
-  letter-spacing: 0.5; }
+  letter-spacing: 0.5;
+  margin-bottom: 20px; }
 
 h1 {
   font-size: 100px;
@@ -413,6 +414,14 @@ li {
 .extra-bottom {
   margin-bottom: 30px; }
 
+.footer {
+  background-color: black;
+  height: 40px;
+  width: 100vw;
+  color: gray;
+  padding: 20px;
+  line-height: 0; }
+
 /* Small devices (tablets, 768px and up) */
 @media screen and (max-width: 991px) {
   .text-column2-sm {
@@ -446,9 +455,8 @@ li {
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  .text-column2-sm {
-    -webkit-column-count: 2;
-    column-count: 2; }
+  .float-right2 {
+    float: right; }
   .row-content {
     padding: 0px 5vw !important;
     min-width: 100%;
@@ -459,9 +467,6 @@ li {
     max-width: 50vw !important;
     -webkit-transform: translate(-25%, 0%) !important;
     transform: translate(-25%, 0%) !important;
-    position: absolute; }
-  .align-bottom {
-    text-align: right;
-    padding-bottom: 50px; } }
+    position: absolute; } }
 
 /* Large devices (large desktops, 1200px and up) */
