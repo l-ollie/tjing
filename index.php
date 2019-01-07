@@ -5,10 +5,10 @@
 
 # request sent using HTTP_X_REQUESTED_WITH
 if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
-  if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['subject']) AND isset($_POST['message'])) {
+  if (isset($_POST['email']) AND isset($_POST['subject']) AND isset($_POST['message'])) {
     $to = 'info@tjing.it';
 
-    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
     $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
@@ -47,6 +47,15 @@ function email($to, $from_mail, $from_name, $subject, $message)
 <head>
   <meta charset="UTF-8">
   <title>Tjing it</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/site.webmanifest">
+<link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#00979d">
+<meta name="msapplication-TileColor" content="#00979d">
+<meta name="theme-color" content="#000000">
+
   <link href="https://fonts.googleapis.com/css?family=Roboto:100.300,400,400i" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="dist/style.css">
@@ -119,7 +128,7 @@ function email($to, $from_mail, $from_name, $subject, $message)
 
       <div class="row row-content z-index4">
         <div class="col-12">
-          <h1 class="container-title">A bit vintage</h1>
+          <h1 class="container-title">The game</h1>
         </div>
       </div>
 
@@ -247,17 +256,22 @@ function email($to, $from_mail, $from_name, $subject, $message)
         <h3>Specs</h3>
         <!-- <p>Description about the product <br> -->
         <p>
-          Rectangular beam from solid European beechwood
+          Rectangular beam from solid European beechwood.
+          <br>
           Finishing of  three layers of hard-waxed oil.
           <br><br>
-          Full color RGB ledstrip
-          <br><br>
-          White LED string protected with waterproof silicone rubber sheath (IP65 protection rating)
+          Full color RGB LEDstrip
+          <br>
+          White LED string protected with waterproof silicone rubber sheath (IP65 protection rating
           <br><br>
           Battery capacity: 2200mAh
-          Playing time:  6-7 hours approx.
-          Charging time: 5-6 hours approx. You can play during charging
+          <br>
+          Playing time:  6-7 hours approx
+          <br>
+          Charging time: 5-6 hours approx, you can play during charging
+          <br>
           Battery type: rechargeable Lithium ion
+          <br>
           USB charger and cable provided
 
         </p>
@@ -267,8 +281,11 @@ function email($to, $from_mail, $from_name, $subject, $message)
         <h3>Dimensions</h3>
         <p>
           Length: 80 cm (31.5 in)
+          <br>
           Width: 6 cm (2.3 in)
+          <br>
           Thickness: 3.5 cm (1.3 in)
+          <br>
           Weight: 1 kg (2 lb 3 oz)
         </p>
       </div>
@@ -434,7 +451,7 @@ function email($to, $from_mail, $from_name, $subject, $message)
 
     <footer class="footer text-center">
 
-        © 2019 André Weijermars
+      © 2019 André Weijermars
 
     </footer>
   </div>
